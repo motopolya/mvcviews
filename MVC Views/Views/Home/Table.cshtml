@@ -1,0 +1,21 @@
+﻿@model CsvRecord
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Файлы</div>
+    <div class="panel-body">
+        <table class="table">
+            @foreach (var rec in Model.Records)
+            {
+                <tr>
+                    @foreach (var item in rec)
+                    {
+                        <td>@item</td>
+                    }
+                </tr>
+            }
+        </table> 
+    </div>
+
+</div>
+
+ 
